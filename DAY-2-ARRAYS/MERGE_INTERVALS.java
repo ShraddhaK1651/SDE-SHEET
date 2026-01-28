@@ -30,6 +30,9 @@ class Solution {
 
         result.add(new int[]{start, end});
 
+ // If the if condition (overlap) keeps satisfying, the interval keeps merging and is added after the loop.
+//If the if condition fails (no overlap), the previous interval is added inside the loop.
+
         return result.toArray(new int[result.size()][]);
     }
 }
