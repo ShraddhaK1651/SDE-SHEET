@@ -1,5 +1,9 @@
 Q]Given an integer numRows, return the first numRows of Pascal's triangle.
 
+  n = row index
+  r = column index
+  nCr=n!/r!(n−r)!​
+
   class Solution{
         public List<List<Integer>>generate(int numrows){
           List<List<Integer>>Triangle=new ArrayList<>();
