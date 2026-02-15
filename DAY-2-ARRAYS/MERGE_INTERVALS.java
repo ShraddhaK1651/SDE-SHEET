@@ -36,3 +36,9 @@ class Solution {
         return result.toArray(new int[result.size()][]);
     }
 }
+
+(a, b) -> a[0] - b[0]
+This is a lambda expression (Comparator).
+It tells Java:
+When comparing two intervals a and b,
+compare them using their starting values.
