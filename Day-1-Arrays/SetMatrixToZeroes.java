@@ -1,3 +1,9 @@
+QUESTION :Set Matrix Zeroes
+🔹 Problem Statement
+Given an m x n integer matrix,
+if any element is 0, set its entire row and entire column to 0.
+You must modify the matrix in place.
+
 class Solution {
     public void setZeroes(int[][] matrix) {
         int m = matrix.length;
