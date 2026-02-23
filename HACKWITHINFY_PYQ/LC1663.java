@@ -27,3 +27,41 @@ Explanation: The numeric value of the string is 1 + 1 + 25 = 27, and it is the s
         
     }
 }
+
+Example 2 (Bigger Remaining)
+N = 3
+K = 60
+
+Start:
+aaa   (cost = 3)
+remaining = 57
+
+At last index:
+add = min(25, 57)
+add = 25
+
+So last becomes:
+'z'
+
+Now remaining = 57 - 25 = 32
+
+Move left:
+
+add = min(25, 32)
+add = 25
+
+Now second becomes:
+'z'
+
+Remaining = 7
+
+Move left:
+add = min(25, 7)
+add = 7
+
+Now first becomes:
+'h'
+
+Final:
+hzz
+8 + 26 + 26 = 60 ✅
