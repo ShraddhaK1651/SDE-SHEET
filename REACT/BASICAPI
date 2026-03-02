@@ -1,0 +1,98 @@
+API BASED QUESTIONS
+1)🌐 What is a REST API?
+A REST API allows a client (like a browser or mobile app) to talk to a server (like a database backend) and perform operations like:
+Get data
+Send data
+Update data
+Delete data
+🌐Key Principles of REST
+✅ Uses HTTP
+✅ Stateless (Server doesn’t remember previous request)
+✅ Uses resources (like users, products)
+✅ Usually returns JSON
+🌐REST Uses HTTP Methods
+These are the main methods used:
+Method	Meaning	     Example
+GET	    Read data    Get all users
+POST	  Create data	 Add new user
+PUT   	Update data	 Update user info
+DELETE	Delete data	 Remove user
+
+2)What is the difference between API and REST API?
+1️⃣ What is an API?
+API (Application Programming Interface) is a general term.
+👉 It is any method that allows two software applications to communicate with each other.
+It does not have to use HTTP.
+It can be:
+Library API (like Java API)
+OS API (Windows API)
+Database API
+Web API
+So basically:
+API = A way for programs to talk to each other.
+2️⃣ What is a REST API?
+A REST API is a type of API that:
+Uses HTTP
+Follows REST architecture rules
+Works with resources (like users, products, orders)
+Uses methods like GET, POST, PUT, DELETE
+Usually returns JSON
+So:
+REST API = API that follows REST principles over HTTP.
+
+3)What do you mean by RESTful web services?
+A RESTful web service:
+✅ Uses HTTP protocol
+✅ Uses resource-based URLs
+✅ Uses HTTP methods properly
+✅ Returns data (usually JSON)
+✅ Is stateless
+
+REST vs RESTful
+REST = Architectural style (rules)
+RESTful = An API that follows those rules
+Q)MESSAGING IN RESTFUL WEB SERVICE
+Messaging in RESTful web services is the process of sending and receiving structured HTTP request
+and response messages between client and server to access or modify resources.
+
+Q) Explain ‘Addressing’ in RESTful web services
+Addressing in RESTful web services refers to the way resources are uniquely identified and accessed 
+using Uniform Resource Identifiers (URIs).
+In simple words:
+👉 Addressing means how we locate a resource on the server using a URL.
+REST uses URIs (Uniform Resource Identifiers) to identify resources.
+Example:
+http://example.com/users
+Here:
+users is the resource
+This URI represents all users
+
+Q) Why are REST services easily scalable?
+REST services are easily scalable due to several inherent characteristics of the RESTful architecture. Here are the key reasons why REST services are scalable:
+
+Stateless Communication: RESTful services follow a stateless communication model, allowing requests to be processed independently and in parallel.
+Resource-Oriented Design: REST APIs are centered around resources, allowing individual resources to be scaled independently.
+Cacheability: RESTful services support caching, thereby reducing the load on the server by reusing stored responses.
+Load Balancing: Load balancers distribute incoming requests across multiple servers, thus ensuring an even workload distribution.
+Horizontal Scaling: REST services can be horizontally scaled by adding more servers or instances to handle increased demand.
+Cloud Infrastructure: REST services can leverage cloud platforms with auto-scaling capabilities for efficient resource allocation.
+
+Q)Differentiate between POST and PUT methods.
+POST Method
+This method is used to build new server resources.
+This method is not idempotent. Hence, multiple identical requests may result in different outcomes.
+The POST Method is typically used for submitting data to create a new resource.
+In this method, the server processes the request, creates a new resource, and responds with a representation of the created resource.
+
+PUT Method
+This method is used to update or replace an existing resource on the server or to create a resource if one doesn’t exist.
+This method is idempotent. Hence, sending the same request multiple times will have the same outcome.
+The PUT method is typically used for updating or replacing an entire resource.
+
+Q)What is CRUD?
+CRUD stands for:
+C – Create
+R – Read
+U – Update
+D – Delete
+It represents the four basic operations that can be performed on data in a database or system.
