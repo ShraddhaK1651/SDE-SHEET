@@ -30,3 +30,31 @@ Note that different sequences are counted as different combinations.
         return dp[target];
     }
 }
+
+
+class Solution {
+    public int combinationSum4(int[] nums, int target) {
+        int n = nums.length;
+        int[][] dp = new int[n + 1][target + 1];
+
+        // Base case
+        for (int i = 0; i <= n; i++) {
+            dp[i][0] = 1; // 1 way to make sum 0
+        }
+
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= target; j++) {
+
+                // exclude current number
+                dp[i][j] = dp[i - 1][j];
+
+                // include current number
+                if (nums[i - 1] <= j) {
+                    dp[i][j] += dp[i][j - nums[i - 1]];
+                }
+            }
+        }
+
+        return dp[n][target];
+    }
+}
